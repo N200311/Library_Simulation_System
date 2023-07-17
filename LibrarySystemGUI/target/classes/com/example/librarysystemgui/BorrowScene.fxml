@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystemgui.BorrowController">
+   <children>
+      <VBox layoutX="125.0" layoutY="54.0" style="-fx-alignment: center; -fx-spacing: 40;">
+         <children>
+            <HBox fx:id="hbox" alignment="CENTER" prefHeight="41.0" prefWidth="348.0" style="-fx-spacing: 70;">
+               <children>
+                  <Label fx:id="IDLabel" text="Enter Book ID :">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IDTextField" opacity="0.0" style="-fx-opacity: 1;" />
+               </children>
+            </HBox>
+            <Label fx:id="WarningLabel">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <HBox fx:id="datebox" style="-fx-spacing: 50; -fx-alignment: center;">
+               <children>
+                  <VBox style="-fx-alignment: center; -fx-spacing: 50;">
+                     <children>
+                        <Label fx:id="STLabel">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ENLabel">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox style="-fx-spacing: 50;">
+                     <children>
+                        <DatePicker fx:id="STDatePicker" opacity="0.0" />
+                        <DatePicker fx:id="ENDatePicker" opacity="0.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="DoneLabel">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="211.0" layoutY="425.0" style="-fx-spacing: 70;">
+         <children>
+            <Button fx:id="MenuBT" mnemonicParsing="false" onAction="#MenuBTAction" style="-fx-background-color: white;" text="Menu">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="ExitBT" mnemonicParsing="false" onAction="#ExitBTAction" style="-fx-background-color: white;" text="Exit">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="BorrowBT" layoutX="244.0" layoutY="373.0" mnemonicParsing="false" onAction="#BorrowBTAction" style="-fx-background-color: white;" text="Borrow Book">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

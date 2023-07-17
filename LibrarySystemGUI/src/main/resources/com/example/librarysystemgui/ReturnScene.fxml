@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="600.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystemgui.ReturnController">
+   <children>
+      <HBox layoutX="212.0" layoutY="313.0" style="-fx-spacing: 70;">
+         <children>
+            <Button fx:id="MenuBT" mnemonicParsing="false" onAction="#MenuBTAction" style="-fx-background-color: white;" text="Menu">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="ExitBT" mnemonicParsing="false" onAction="#ExitBTAction" style="-fx-background-color: white;" text="Exit">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="126.0" layoutY="85.0" style="-fx-spacing: 30; -fx-alignment: center;">
+         <children>
+            <HBox fx:id="hbox" alignment="CENTER" prefHeight="41.0" prefWidth="348.0" style="-fx-spacing: 70;">
+               <children>
+                  <Label fx:id="IDLabel" text="Enter Book ID : ">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IDTextField" opacity="0.0" style="-fx-opacity: 1;" />
+               </children>
+            </HBox>
+            <Label fx:id="WarningLabel">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="DoneLabel">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="ReturnBT" layoutX="248.0" layoutY="263.0" mnemonicParsing="false" onAction="#ReturnBTAction" style="-fx-background-color: white;" text="Return Book">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
